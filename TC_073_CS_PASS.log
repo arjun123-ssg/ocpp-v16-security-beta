@@ -1,0 +1,43 @@
+[01:48:16:093] [info] "Successfully connected to System Under Test"
+----------------------------------------------------------------------------------------------------------  
+Test Case Name : TC_073_CS  
+Test Case Description : Update Charge Point Password for HTTP Basic Authentication-undefined  
+Test Start Time : 2025-01-21 01:48:19  
+Test End Time : 2025-01-21 01:48:19  
+System Under Test (SUT) : CS  
+Communication Medium : WEBSOCKET  
+OCPP Version : OCPP 1.6  
+OCTT Instance : ccf4583dfce7450a7e39e49b04df0aff  
+Build Number : Release_2024-11_v2  
+Configuration : OCPP_v16(f9c376dc5481df480190b812fa151ec1)  
+Certification Profile : [Security extension]  
+----------------------------------------------------------------------------------------------------------  
+[01:48:19:022] [started_testcase] "Security_CS - TC_073_CS-Update Charge Point Password for HTTP Basic Authentication"
+[01:48:19:024] [info] "The value of 'Reset CS before testcase' is false"
+[01:48:19:025] [info] "Start clearing internal states."
+[01:48:19:025] [info] "========================= Starting Testcase Preparation =========================="
+[01:48:19:025] [info] "Security profile is 1"
+[01:48:19:025] [info] "========================== Starting Main Testcase Steps =========================="
+[01:48:19:025] [msg-out] [2,"9dd451b8-45d0-4821-8839-4c4796dfb9ef","ChangeConfiguration",{"key":"AuthorizationKey","value":"4F43415F4F4354545F61646D696E5F74657374"}]
+[01:48:19:025] [info] "Waiting for response message of type ChangeConfigurationResponse"
+[01:48:19:403] [msg-in] [3,"9dd451b8-45d0-4821-8839-4c4796dfb9ef",{"status":"Accepted"}]
+[01:48:19:424] [info] "Received response message of the expected type."
+[01:48:19:425] [info] "Waiting for request message of type StatusNotificationRequest"
+[01:48:29:303] [info] "Disconnected from System Under Test"
+[01:48:34:870] [info] "Successfully connected to System Under Test"
+[01:48:34:887] [info] "============================ Starting Restore Procedure ============================"
+[01:48:34:888] [info] "Restoring basic authentication password."
+[01:48:34:889] [msg-out] [2,"a51e5eb2-7757-4119-8df4-855c10098fdd","ChangeConfiguration",{"key":"AuthorizationKey","value":"7465737431323334"}]
+[01:48:34:891] [info] "Waiting for response message of type ChangeConfigurationResponse"
+[01:48:35:248] [msg-in] [3,"a51e5eb2-7757-4119-8df4-855c10098fdd",{"status":"Accepted"}]
+[01:48:35:253] [info] "Received response message of the expected type."
+[01:48:35:255] [info] "Waiting for request message of type StatusNotificationRequest"
+[01:48:45:168] [info] "Disconnected from System Under Test"
+[01:48:55:776] [info] "Successfully connected to System Under Test"
+[01:48:55:792] [info] "The value of 'Reset CS after testcase' is false"
+[01:48:55:894] [verdict] "PASS"
+[01:48:55:894] [info] "The test case has ended."
+[01:48:55:895] [stopped_testcase] 
+
+
+Test case result : PASS  
